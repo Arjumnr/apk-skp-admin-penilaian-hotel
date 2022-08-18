@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PertanyaanController;
 use App\Http\Controllers\RespondenController;
@@ -8,7 +9,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Route::get('/',[PertanyaanController::class, 'indexPertanyaan'])->name('indexPertanyaan');
+
+ Route::get('/login',[LoginController::class, 'indexLogin'])->name('indexLogin');
 
 
 //pertanyaan

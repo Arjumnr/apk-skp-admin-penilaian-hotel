@@ -1,22 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  @extends('custom.head')
+  {{-- head --}}
+  @include('custom.head')
   <body>
     <div class="container-scroller">
-      
-      {{-- header --}}
-      @include('custom.header')
-      {{-- end header --}}
-      
-
-
-
+      {{-- navbar --}}
+      @include('custom.navbar')
+      <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        
+        <!-- partial:partials/_sidebar.html -->
         {{-- sidebar --}}
         @include('custom.sidebar')
-        {{-- end sidebar --}}
-        
+        <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
@@ -33,20 +29,77 @@
                 </ul>
               </nav>
             </div>
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    {{-- <h4 class="card-title">Inverse table</h4>
+                    <p class="card-description"> Add class <code>.table-dark</code>
+                    </p> --}}
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th> # </th>
+                          <th> First name </th>
+                          <th> Amount </th>
+                          <th> Deadline </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 1 </td>
+                          <td> Herman Beck </td>
+                          <td> $ 77.99 </td>
+                          <td> May 15, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 2 </td>
+                          <td> Messsy Adam </td>
+                          <td> $245.30 </td>
+                          <td> July 1, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td> John Richards </td>
+                          <td> $138.00 </td>
+                          <td> Apr 12, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 4 </td>
+                          <td> Peter Meggik </td>
+                          <td> $ 77.99 </td>
+                          <td> May 15, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 5 </td>
+                          <td> Edward </td>
+                          <td> $ 160.25 </td>
+                          <td> May 03, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 6 </td>
+                          <td> John Doe </td>
+                          <td> $ 123.21 </td>
+                          <td> April 05, 2015 </td>
+                        </tr>
+                        <tr>
+                          <td> 7 </td>
+                          <td> Henry Tom </td>
+                          <td> $ 150.00 </td>
+                          <td> June 16, 2015 </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            //konten pertanyaan
-          
-            
-            
-           
+   
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div class="container-fluid d-flex justify-content-between">
-              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-            </div>
-          </footer>
+          @include('custom.footer')
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
@@ -54,21 +107,6 @@
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="admin/assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="admin/assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="admin/assets/js/jquery.cookie.js" type="text/javascript"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="admin/assets/js/off-canvas.js"></script>
-    <script src="admin/assets/js/hoverable-collapse.js"></script>
-    <script src="admin/assets/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="admin/assets/js/dashboard.js"></script>
-    <script src="admin/assets/js/todolist.js"></script>
-    <!-- End custom js for this page -->
+    @include('custom.plugin')
   </body>
 </html>
