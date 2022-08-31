@@ -3,7 +3,7 @@
     <li class="nav-item nav-profile">
       <a href="/" class="nav-link">
         <div class="nav-profile-image">
-          <img src="admin/assets/images/faces/face1.jpg" alt="profile">
+          <img src="../admin/assets/images/faces/face1.jpg" alt="profile">
           <span class="login-status online"></span>
           <!--change to offline or busy as needed-->
         </div>
@@ -23,15 +23,28 @@
     <li class="nav-item">
         <a class="nav-link" href="/pertanyaan">
           <span class="menu-title">Pertanyaan</span>
-          <i class="mdi mdi-home menu-icon"></i>
+          <i class="mdi mdi-twitch menu-icon"></i>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/responden">
           <span class="menu-title">Responden</span>
-          <i class="mdi mdi-home menu-icon"></i>
+          <i class="mdi mdi-twitch menu-icon"></i>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/CSI">
+          <span class="menu-title">Metode CSI</span>
+          <i class="mdi mdi-chart-bar menu-icon"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/IPA">
+          <span class="menu-title">Metode IPA</span>
+          <i class="mdi mdi-chart-bar menu-icon"></i>
+        </a>
+      </li>
+     
    
   </ul>
 </nav>

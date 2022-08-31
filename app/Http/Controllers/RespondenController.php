@@ -11,4 +11,6 @@ class RespondenController extends Controller
     {
         return view('responden.index-responden');
     }
+
+    
 }

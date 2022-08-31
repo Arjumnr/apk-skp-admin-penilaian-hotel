@@ -39,54 +39,70 @@
                     <table class="table table-dark">
                       <thead>
                         <tr>
-                          <th> # </th>
-                          <th> First name </th>
-                          <th> Amount </th>
-                          <th> Deadline </th>
+                          <th> No </th>
+                          <th> Kode Pertanyaan </th>
+                          <th> Responden </th>
+                          <th> Kepuasan </th>
+                          <th> Kepentingan </th>
+                          <th> Durasi </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td> 1 </td>
-                          <td> Herman Beck </td>
-                          <td> $ 77.99 </td>
-                          <td> May 15, 2015 </td>
+                          <td> A1 </td>
+                          <td> Baco </td>
+                          <td> 1 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 2 </td>
-                          <td> Messsy Adam </td>
-                          <td> $245.30 </td>
-                          <td> July 1, 2015 </td>
+                          <td> A2 </td>
+                          <td> Baecce </td>
+                          <td> 3 </td>
+                          <td> 2 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 3 </td>
-                          <td> John Richards </td>
-                          <td> $138.00 </td>
-                          <td> Apr 12, 2015 </td>
+                          <td> A3 </td>
+                          <td> Batu </td>
+                          <td> 4 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 4 </td>
-                          <td> Peter Meggik </td>
-                          <td> $ 77.99 </td>
-                          <td> May 15, 2015 </td>
+                          <td> A4 </td>
+                          <td> lala </td>
+                          <td> 1 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 5 </td>
-                          <td> Edward </td>
-                          <td> $ 160.25 </td>
-                          <td> May 03, 2015 </td>
+                          <td> A5 </td>
+                          <td> Anu </td>
+                          <td> 2 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 6 </td>
-                          <td> John Doe </td>
-                          <td> $ 123.21 </td>
-                          <td> April 05, 2015 </td>
+                          <td> A6 </td>
+                          <td> Okto </td>
+                          <td> 5 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                         <tr>
                           <td> 7 </td>
-                          <td> Henry Tom </td>
-                          <td> $ 150.00 </td>
-                          <td> June 16, 2015 </td>
+                          <td> A7 </td>
+                          <td> Putri </td>
+                          <td> 2 </td>
+                          <td> 3 </td>
+                          <td> 4 menit </td>
                         </tr>
                       </tbody>
                     </table>

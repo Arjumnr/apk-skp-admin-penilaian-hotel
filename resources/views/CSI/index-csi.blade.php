@@ -19,10 +19,7 @@
               <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
                   <i class="mdi mdi-twitch"></i>
-                </span> Pertanyaan
-                <br>
-                <br>
-                <a href="pertanyaan/tambah-pertanyaan"><button type="button" class="btn btn-gradient-primary btn-rounded btn-fw">Tambah Pertanyaan</button></a>
+                </span> Metode CSI ( Customer Satisfaction Index )
               </h3>
               <nav aria-label="breadcrumb">
                 <ul class="breadcrumb">
@@ -41,38 +38,45 @@
                     </p> --}}
                    
                     <table class="table table-dark">
-                      <thead>
-                        <tr>
-                          <th> No </th>
-                          <th> Kode Pertanyaan </th>
-                          <th> Pertanyaan </th>
-                          <th> Aksi </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-
-                        @php $no = 1; @endphp
-
-                        @forelse($pertanyaan as $key => $row)
-
-                        <tr>
-                          <td> {{ $no++ }} </td>
-                          <td> {{ $row->kode }} </td>
-                          <td> {{ $row->pertanyaan }} </td>
-                          <td>
-                            <a href="pertanyaan/edit-pertanyaan/{{ $key }}"><label class="badge badge-info">Edit</label></a>
-                            <a href="pertanyaan/hapus-pertanyaan/{{ $key }}"><label class="badge badge-danger">Hapus</label></a>
-                          </td>
-                        </tr>
-
-                        @empty
-                        <tr>
-                            <td colspan="5" class="text-center">Tidak ada data</td>
-                        </tr>
-                    @endforelse
-                          
-                        
-                      </tbody>
+                        <thead>
+                          <tr>
+                            <th> No </th>
+                            <th> Kode Pertanyaan </th>
+                            <th> Kepuasan </th>
+                            <th> Kepentingan </th>
+                            <th> Total </th>
+                            <th> Rata-rata </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> 1 </td>
+                            <td> A1 </td>
+                            <td> 1,3,2,4,5,2,3,4,2,4,2 </td>
+                            <td> 4,3,2,2,3,4,1,1,3,2,3 </td>
+                            <td> 90 </td>
+                            <td> 32,344343434 </td>
+                          </tr>
+                          <tr>
+                            <td> 2 </td>
+                            <td> A2 </td>
+                            <td> 5,3,4,2,1,4,4,4,2,4,4 </td>
+                            <td> 2,1,4,5,2,3,1,3,4,2,2 </td>
+                            <td> 90 </td>
+                            <td> 32,344343434 </td>
+                          </tr>
+                          <tr>
+                            <td> 3 </td>
+                            <td> A3 </td>
+                            <td> 4,3,2,2,3,4,1,1,3,2,3 </td>
+                            <td> 1,3,2,4,5,2,3,4,2,4,2 </td>
+                            <td> 90 </td>
+                            <td> 32,344343434 </td>
+                          </tr>
+                         
+                          </tr>
+                        </tbody>
+                      </table>
                     </table>
                   </div>
                 </div>
