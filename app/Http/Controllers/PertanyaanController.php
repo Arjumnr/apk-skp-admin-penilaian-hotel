@@ -17,21 +17,39 @@ class PertanyaanController extends Controller
    
 
     public function tambahPertanyaan(){
+        
         return view('pertanyaan.tambah-pertanyaan');
     }
 
     public function storePertanyaan(Request $request){
         $request = $request->all();
         $pertanyaan = Pertanyaan::create($request);
-        return redirect('/pertanyaan');
+        if($pertanyaan){
+            alert()->success('Berhasil.','Tambah Pertanyaan');
+            return redirect('/pertanyaan');
+        }
         
     }
    
 
     public function hapusPertanyaan($id){
-        $pertanyaan = Pertanyaan::find($id);
-        $pertanyaan->delete();
-        return redirect('/pertanyaan');
+        $pertanyaan = Pertanyaan::where('id',$id)->first();
+        if($pertanyaan != null){
+            $pertanyaan->delete();
+            alert()->success('Berhasil','Hapus Pertanyaan');
+            return redirect('/pertanyaan');
+        }
+        
+    
+    }
 
+    public function editPertanyaan($id){
+        $pertanyaan = Pertanyaan::where('id',$id)->first();
+        if($pertanyaan != null){
+            return view('pertanyaan.edit-pertanyaan', compact('pertanyaan'));
+        }
+        
+
+        
     }
 }

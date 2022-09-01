@@ -60,8 +60,8 @@
                           <td> {{ $row->kode }} </td>
                           <td> {{ $row->pertanyaan }} </td>
                           <td>
-                            <a href="pertanyaan/edit-pertanyaan/{{ $key }}"><label class="badge badge-info">Edit</label></a>
-                            <a href="pertanyaan/hapus-pertanyaan/{{ $key }}"><label class="badge badge-danger">Hapus</label></a>
+                            <a href="pertanyaan/edit-pertanyaan/{{ $row->id }}"><label class="badge badge-info">Edit</label></a>
+                            <a href="pertanyaan/hapus-pertanyaan/{{ $row->id }}"><label class="badge badge-danger">Hapus</label></a>
                           </td>
                         </tr>
 

@@ -13,4 +13,5 @@
 <!-- Custom js for this page -->
 <script src="../admin/assets/js/dashboard.js"></script>
 <script src="../admin/assets/js/todolist.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
 <!-- End custom js for this page -->

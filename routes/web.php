@@ -6,13 +6,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PertanyaanController;
 use App\Http\Controllers\RespondenController;
 use App\Http\Controllers\CSIController;
+use App\Http\Controllers\DashboardController;
 
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/',[DashboardController::class, 'dashboard'])->name('dashboard');
 
 
  Route::get('/login',[LoginController::class, 'indexLogin'])->name('indexLogin');
+ Route::post('/loginSS',[LoginController::class, 'login'])->name('login');
+ Route::get('/logout',[DashboardController::class, 'logout'])->name('logout');
 
 
 //pertanyaan
@@ -21,6 +23,7 @@ Route::group(['prefix' => '/pertanyaan'], function(){
     Route::get('/tambah-pertanyaan',[PertanyaanController::class, 'tambahPertanyaan'])->name('tambahPertanyaan');
     Route::post('/store-pertanyaan',[PertanyaanController::class, 'storePertanyaan'])->name('storePertanyaan');
     Route::get('/hapus-pertanyaan/{id}',[PertanyaanController::class, 'hapusPertanyaan'])->name('hapusPertanyaan');
+    Route::get('/edit-pertanyaan/{id}',[PertanyaanController::class, 'editPertanyaan'])->name('editPertanyaan');
     // Route::put('/cekLaporan/{id}',[LaporanController::class, 'cekLaporan'])->name('cekLaporan');
 });
 

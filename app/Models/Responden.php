@@ -12,7 +12,8 @@ class Responden extends Model
     protected $fillable = [
         'nama', 
         'umur', 
-        'komentar_tambahan'];
+        'komentar_tambahan',
+        'durasi'];
 
 
 }

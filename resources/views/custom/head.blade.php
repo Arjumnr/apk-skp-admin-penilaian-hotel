@@ -6,6 +6,8 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="../admin/assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../admin/assets/vendors/css/vendor.bundle.base.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->

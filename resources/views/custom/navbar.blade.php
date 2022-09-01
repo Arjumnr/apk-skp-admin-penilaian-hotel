@@ -31,8 +31,8 @@
           <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
             
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/login">
-              <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+            <a class="dropdown-item" href="/logout">
+              <i class="mdi mdi-logout me-2 text-primary"></i> Logout </a>
           </div>
         </li>
         <li class="nav-item d-none d-lg-block full-screen-link">
@@ -48,3 +48,4 @@
       </button>
     </div>
   </nav>
+  @include('sweetalert::alert')

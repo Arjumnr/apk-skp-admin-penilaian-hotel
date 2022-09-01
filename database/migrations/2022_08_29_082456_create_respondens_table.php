@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('umur');
             $table->string('komentar_tambahan');
+            $table->time('durasi');
             $table->timestamps();
         });
     }

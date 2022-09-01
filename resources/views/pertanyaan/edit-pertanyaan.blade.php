@@ -20,15 +20,17 @@
             <div class="card">
               <div class="card-body">
   
-                <form enctype="multipart/form-data" class="forms-sample" action="store-pertanyaan" method="POST">
+                <form enctype="multipart/form-data" class="forms-sample" action="" method="POST">
+                    @method('PUT')
+
                  @csrf
                   <div class="form-group">
                     <label for="kode">Kode</label>
-                    <input type="text" class="form-control" id="kode" name="kode" placeholder="Kode">
+                    <input type="text" class="form-control" id="kode" name="kode" placeholder="Kode" value="{{$pertanyaan->kode}}">
                     <br>
                   <div class="form-group">
                     <label for="pertanyaan">Pertanyaan</label>
-                    <textarea class="form-control" id="pertanyaan" rows="4" required name="pertanyaan"></textarea>
+                    <textarea class="form-control" id="pertanyaan" rows="4" required name="pertanyaan" value="{{$pertanyaan->pertanyaan}}"></textarea>
                   </div>
                   @method('POST')
                   <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
