@@ -32,7 +32,7 @@
                   </div>
                   @method('POST')
                   <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
-                  <button class="btn btn-light">Cancel</button>
+                  <button type="cancel" class="btn btn-light"><a href="/">Cancel</a></button>
                 </form>
               </div>
             </div>

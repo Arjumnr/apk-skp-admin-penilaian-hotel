@@ -9,6 +9,8 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
+    {{-- <script src="jquery-3.6.0.min.js"></script> --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <!-- Layout styles -->
     <link rel="stylesheet" href="admin/assets/css/style.css">
@@ -64,15 +66,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">Pie chart</h4>
-                      <canvas id="pieChart" style="height:250px"></canvas>
-                    </div>
-                  </div>
-                </div>
+              
               <div class="col-md-4 stretch-card grid-margin">
                
               </div>
