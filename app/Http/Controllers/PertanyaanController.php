@@ -26,7 +26,7 @@ class PertanyaanController extends Controller
         $pertanyaan = Pertanyaan::create($request);
         if($pertanyaan){
             alert()->success('Berhasil.','Tambah Pertanyaan');
-            return redirect('/pertanyaan');
+            return redirect('/pertanyaan'); 
         }
         
     }
