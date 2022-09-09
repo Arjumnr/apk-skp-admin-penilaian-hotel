@@ -33,68 +33,138 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    {{-- <h4 class="card-title">Inverse table</h4>
-                    <p class="card-description"> Add class <code>.table-dark</code>
-                    </p> --}}
-                   
                     <table class="table table-dark">
-                        <thead>
-                          <tr>
-                            <th> No </th>
-                            <th> Kode Pertanyaan </th>
-                            <th> Kepuasan </th>
-                            <th> Kepentingan </th>
-                            <th> Total </th>
-                            <th> Rata-rata </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> 1 </td>
-                            <td> A1 </td>
-                            <td> 1,3,2,4,5,2,3,4,2,4,2 </td>
-                            <td> 4,3,2,2,3,4,1,1,3,2,3 </td>
-                            <td> 90 </td>
-                            <td> 32,344343434 </td>
-                          </tr>
-                          <tr>
-                            <td> 2 </td>
-                            <td> A2 </td>
-                            <td> 5,3,4,2,1,4,4,4,2,4,4 </td>
-                            <td> 2,1,4,5,2,3,1,3,4,2,2 </td>
-                            <td> 90 </td>
-                            <td> 32,344343434 </td>
-                          </tr>
-                          <tr>
-                            <td> 3 </td>
-                            <td> A3 </td>
-                            <td> 4,3,2,2,3,4,1,1,3,2,3 </td>
-                            <td> 1,3,2,4,5,2,3,4,2,4,2 </td>
-                            <td> 90 </td>
-                            <td> 32,344343434 </td>
-                          </tr>
-                         
-                          </tr>
-                        </tbody>
-                      </table>
+                      <thead>
+                        <tr>
+                          <th> No </th>
+                          <th> Kode Pertanyaan </th>
+                          <th> Tingkat Kepentingan (Hi) </th>
+                          <th> Tingkat Kinerja (Ki) </th>
+                          <th> Tingkat Kesesuaian (Tki) % </th>
+                          <th> Rata-rata Hi(Yi) </th>
+                          <th> Rata-rata Ki(Xi) </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 1 </td>
+                          <td> T1 </td>
+                          <td> 68 </td>
+                          <td> 75 </td>
+                          <td> 110,29 </td>
+                          <td> 3,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 2 </td>
+                          <td> T2 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td> T3 </td>
+                          <td> 68 </td>
+                          <td> 75 </td>
+                          <td> 110,29 </td>
+                          <td> 3,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 4 </td>
+                          <td> T4 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 5 </td>
+                          <td> T5 </td>
+                          <td> 68 </td>
+                          <td> 75 </td>
+                          <td> 110,29 </td>
+                          <td> 3,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 6 </td>
+                          <td> T6 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 7 </td>
+                          <td> T7 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 8 </td>
+                          <td> T8 </td>
+                          <td> 68 </td>
+                          <td> 75 </td>
+                          <td> 110,29 </td>
+                          <td> 3,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 9 </td>
+                          <td> R1 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        
+                        <tr>
+                          <td> 10 </td>
+                          <td> R2 </td>
+                          <td> 78 </td>
+                          <td> 70 </td>
+                          <td> 115,29 </td>
+                          <td> 4,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                        <tr>
+                          <td> 11 </td>
+                          <td> R3 </td>
+                          <td> 68 </td>
+                          <td> 75 </td>
+                          <td> 110,29 </td>
+                          <td> 3,24 </td>
+                          <td> 3,75 </td>
+                        </tr>
+                       
+                      </tbody>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
-            
-   
-          </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          @include('custom.footer')
-          <!-- partial -->
+          </div>    
         </div>
+
         <!-- main-panel ends -->
       </div>
+      @include('custom.footer')  
+
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    @include('custom.plugin')
   </body>
+  @include('custom.plugin')
+
+
 </html>

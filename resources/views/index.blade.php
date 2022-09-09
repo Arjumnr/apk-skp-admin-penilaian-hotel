@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Purple Admin</title>
     <!-- plugins:css -->
+    <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
+
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
     {{-- <script src="jquery-3.6.0.min.js"></script> --}}
@@ -68,6 +70,7 @@
               </div>
               
               <div class="col-md-4 stretch-card grid-margin">
+                
                
               </div>
               
@@ -133,3 +136,4 @@
     <!-- End custom js for this page -->
   </body>
 </html>
+{{-- <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script> --}}
