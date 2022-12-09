@@ -10,10 +10,10 @@ class Responden extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nama', 
-        'umur', 
-        'komentar_tambahan',
-        'durasi'];
-
+        'id_responden',
+        'kode_pertanyaan',
+        'kepuasan',
+        'kinerja'
+    ];
 
 }

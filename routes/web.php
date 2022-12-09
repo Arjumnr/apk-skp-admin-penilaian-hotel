@@ -10,6 +10,7 @@ use App\Http\Controllers\DashboardController;
 
 
 Route::get('/',[DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/test', [LoginController::class, 'tess'])->name('tess');
 
 
  Route::get('/login',[LoginController::class, 'indexLogin'])->name('indexLogin');

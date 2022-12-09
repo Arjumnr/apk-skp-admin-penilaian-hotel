@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     
+    
     public function dashboard(Request $request){
         $session = $request->session()->has('username');
         
