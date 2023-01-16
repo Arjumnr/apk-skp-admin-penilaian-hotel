@@ -9,15 +9,15 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
 
-    <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendors/css/vendor.bundle.base.css') }}">
     {{-- <script src="jquery-3.6.0.min.js"></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <!-- Layout styles -->
-    <link rel="stylesheet" href="admin/assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('admin/assets/css/style.css') }}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="admin/assets/images/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset('admin/assets/images/favicon.ico') }}" />
   </head>
   <body>
     <div class="container-scroller">
@@ -52,7 +52,7 @@
                     <img src="admin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">Pertanyaan <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5"> 20 </h2>
+                    <h2 class="mb-5"> <?= $jumlah_pertanyaan ?> </h2>
                     <h6 class="card-text">Jumlah Pertanyaan</h6>
                   </div>
                 </div>
@@ -63,7 +63,7 @@
                     <img src="admin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3"> Responden <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5"> 20 </h2>
+                    <h2 class="mb-5"> <?= $jumlah_responden ?> </h2>
                     <h6 class="card-text">Jumlah Responden</h6>
                   </div>
                 </div>

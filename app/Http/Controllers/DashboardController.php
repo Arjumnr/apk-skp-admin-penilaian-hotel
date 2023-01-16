@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Console\View\Components\Alert;
 use Illuminate\Http\Request;
+use App\Models\Pertanyaan;
+use App\Models\Responden;
 
 
 class DashboardController extends Controller
@@ -14,11 +16,14 @@ class DashboardController extends Controller
         $session = $request->session()->has('username');
         
         if($session == true){
-            return view('index');
+            //jumlah pertanyaan
+            $jumlah_pertanyaan = Pertanyaan::count();
+            $jumlah_responden = Responden::count();
+            return view('index', compact('jumlah_pertanyaan', 'jumlah_responden'));
         } else {
             return redirect('/login');
         }
-        return view('index');
+        return view('login');
     }
 
     public function logout(Request $request) {

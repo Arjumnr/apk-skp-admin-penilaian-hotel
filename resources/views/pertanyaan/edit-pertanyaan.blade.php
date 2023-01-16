@@ -19,10 +19,8 @@
             
             <div class="card">
               <div class="card-body">
-  
-                <form enctype="multipart/form-data" class="forms-sample" action="" method="POST">
-                    @method('PUT')
 
+                <form enctype="multipart/form-data" class="forms-sample" action="{{ route('updatePertanyaan', $pertanyaan->id)}}" method="POST">
                  @csrf
                   <div class="form-group">
                     <label for="kode">Kode</label>
@@ -30,9 +28,8 @@
                     <br>
                   <div class="form-group">
                     <label for="pertanyaan">Pertanyaan</label>
-                    <textarea class="form-control" id="pertanyaan" rows="4" required name="pertanyaan" value="{{$pertanyaan->pertanyaan}}"></textarea>
+                    <input class="form-control" id="pertanyaan" rows="4" required name="pertanyaan" value="{{$pertanyaan->pertanyaan}}"></input>
                   </div>
-                  @method('POST')
                   <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
                   <button class="btn btn-light">Cancel</button>
                 </form>
