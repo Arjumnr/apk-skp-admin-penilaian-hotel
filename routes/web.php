@@ -7,6 +7,7 @@ use App\Http\Controllers\PertanyaanController;
 use App\Http\Controllers\RespondenController;
 use App\Http\Controllers\CSIController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ClearController;
 
 
 Route::get('/', [DashboardController::class, 'dashboard'])->name('dashboard');
@@ -46,3 +47,6 @@ Route::group(['prefix' => '/IPA'], function () {
     Route::get('/', [IPAController::class, 'indexIPA'])->name('indexIPA');
     // Route::put('/cekLaporan/{id}',[LaporanController::class, 'cekLaporan'])->name('cekLaporan');
 });
+
+Route::get('/clear/route', [ClearController::class, 'clearRoute']);
+

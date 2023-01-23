@@ -40,8 +40,8 @@
                       <thead>
                         <tr>
                           <th> No </th>
+                          <th> Kode User </th>
                           <th> Kode Pertanyaan </th>
-                          <th> Responden </th>
                           <th> Kepuasan </th>
                           <th> Kepentingan </th>
                           <th> Durasi </th>

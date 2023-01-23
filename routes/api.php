@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ApiResponden;
 use App\Http\Controllers\API\ApiPertanyaan;
+use App\Http\Controllers\ClearController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,9 @@ use App\Http\Controllers\API\ApiPertanyaan;
 // });
 
 Route::get('/get-all-responden', [ApiResponden::class, 'getAllResponden']);
+Route::get('/cekUser', [ApiResponden::class, 'cekUserId']);
 Route::get('/get-all-pertanyaan', [ApiPertanyaan::class, 'getAllPertanyaan']);
 Route::post('/add-responden', [ApiResponden::class, 'addResponden']);
-// Route::post('/store-bio', [BioController::class, 'storeBio']);
+//tessssssss
+// Route::post('/store-responden', [ApiResponden::class, 'storeBio']);
+

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pertanyaan;
+use App\Models\Responden;
 
 class ApiPertanyaan extends Controller
 {
@@ -14,4 +15,8 @@ class ApiPertanyaan extends Controller
         $response = ['data' => $datas, 'message' => 'Get Data successfully.'];
         return response($response, 200);
     }
+
+   
+
 }
+

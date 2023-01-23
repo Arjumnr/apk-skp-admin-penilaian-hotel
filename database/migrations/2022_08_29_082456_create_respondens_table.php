@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('kode_pertanyaan');
             $table->string('kepuasan');
             $table->string('kinerja');
+            $table->time('durasi');
             $table->timestamps();
         });
     }

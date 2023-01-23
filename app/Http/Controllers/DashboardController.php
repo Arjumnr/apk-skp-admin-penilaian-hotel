@@ -31,4 +31,6 @@ class DashboardController extends Controller
         alert()->success('Logout','Logout Berhasil.'); 
         return redirect('/login');
     }
+
+    
 }
