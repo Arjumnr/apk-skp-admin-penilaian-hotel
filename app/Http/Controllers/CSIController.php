@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class CSIController extends Controller
 {
-    //
+    
     public function indexCSI()
     {
-        return view('csi.index-csi');
+        return view('CSI.index-csi');
     }
 }

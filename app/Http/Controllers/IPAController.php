@@ -9,6 +9,6 @@ class IPAController extends Controller
     //
     public function indexIPA()
     {
-        return view('ipa.index-ipa');
+        return view('IPA.index-ipa');
     }
 }

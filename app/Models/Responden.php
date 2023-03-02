@@ -13,7 +13,8 @@ class Responden extends Model
         'id_responden',
         'kode_pertanyaan',
         'kepuasan',
-        'kinerja'
+        'kinerja',
+        'durasi'
     ];
 
 }

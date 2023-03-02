@@ -48,5 +48,5 @@ Route::group(['prefix' => '/IPA'], function () {
     // Route::put('/cekLaporan/{id}',[LaporanController::class, 'cekLaporan'])->name('cekLaporan');
 });
 
-Route::get('/clear/route', [ClearController::class, 'clearRoute']);
+Route::get('/c', [ClearController::class, 'clearRoute']);
 
